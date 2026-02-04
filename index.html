@@ -11,7 +11,7 @@
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Animation -->
+  <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- CSS -->
@@ -19,9 +19,10 @@
 </head>
 
 <body>
-  <!-- NAVBAR -->
 
+<!-- NAVBAR -->
 <nav class="navbar">
+
   <div class="logo">Suranjan</div>
 
   <div class="menu-toggle" id="menu-toggle">
@@ -34,113 +35,101 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#certificates">Certificates</a></li>
   </ul>
+
 </nav>
 
 
+<!-- HERO -->
+<section class="hero" id="home">
 
-  <!-- HERO -->
-  <section class="hero" id="home">
+  <h1 data-aos="fade-up">Suranjan Chaudhari</h1>
 
-    <h1 data-aos="fade-up">Suranjan Chaudhari</h1>
-    <p data-aos="fade-up" data-aos-delay="200">
-      CSE (AI & ML) Student | Data & ML Enthusiast
-    </p>
+  <p data-aos="fade-up" data-aos-delay="200">
+    CSE (AI & ML) Student | Data & ML Enthusiast
+  </p>
 
-    <div class="socials" data-aos="zoom-in" data-aos-delay="400">
-      <a href="https://github.com/suranjan2006" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/suranjan-chaudhari-08a745342/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:suranjanchaudhari07@gmail.com"><i class="fas fa-envelope"></i></a>
-    </div>
+  <div class="socials" data-aos="zoom-in" data-aos-delay="400">
+    <a href="https://github.com/suranjan2006" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/suranjan-chaudhari-08a745342/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:suranjanchaudhari07@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
 
-    <button onclick="document.getElementById('projects').scrollIntoView()">View Projects</button>
-  </section>
+  <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+    View Projects
+  </button>
 
-  <!-- SKILLS -->
+</section>
+
+
+<!-- SKILLS -->
 <section class="skills" id="skills">
-
 
   <h2 data-aos="fade-up">Technical Skills</h2>
 
-  <div class="skill-card" data-aos="zoom-in">C++ (DSA, STL, OOP)</div>
-  <div class="skill-card" data-aos="zoom-in">Python (Pandas, NumPy, Scikit-learn)</div>
-  <div class="skill-card" data-aos="zoom-in">Machine Learning</div>
-  <div class="skill-card" data-aos="zoom-in">Data Visualization (Matplotlib, Seaborn)</div>
-  <div class="skill-card" data-aos="zoom-in">HTML, CSS, JavaScript</div>
+  <div class="skill-card">C++ (DSA, STL, OOP)</div>
+  <div class="skill-card">Python (Pandas, NumPy, Scikit-learn)</div>
+  <div class="skill-card">Machine Learning</div>
+  <div class="skill-card">Data Visualization</div>
+  <div class="skill-card">HTML, CSS, JavaScript</div>
+
 </section>
 
-  <!-- PROJECTS -->
- <section class="projects" id="projects">
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+
+  <h2 data-aos="fade-up">Featured Projects</h2>
+
+  <div class="project-card">
+    <h3>Movie Recommender</h3>
+    <p>TF-IDF | NLP</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Laptop Price Predictor</h3>
+    <p>Random Forest</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Spam Classifier</h3>
+    <p>Naive Bayes</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Face Recognition</h3>
+    <p>OpenCV</p>
+  </div>
+
+</section>
 
 
-    <h2 data-aos="fade-up">Featured Projects</h2>
+<!-- CERTIFICATES -->
+<section class="certificates" id="certificates">
 
-    <div class="project-card" data-aos="fade-right">
-      <h3>Movie Recommender System</h3>
-      <p>TF-IDF | Cosine Similarity | NLP</p>
-    </div>
+  <h2 data-aos="fade-up">Certificates</h2>
 
-    <div class="project-card" data-aos="fade-left">
-      <h3>Laptop Price Predictor</h3>
-      <p>Random Forest | Regression</p>
-    </div>
+  <a class="project-card" href="#" target="_blank">HackWise 2026</a>
+  <a class="project-card" href="#" target="_blank">Python – IBM</a>
+  <a class="project-card" href="#" target="_blank">JavaScript</a>
+  <a class="project-card" href="#" target="_blank">HTML & CSS</a>
 
-    <div class="project-card" data-aos="fade-right">
-      <h3>Spam Email Classifier</h3>
-      <p>Naive Bayes | NLP</p>
-    </div>
+</section>
 
-    <div class="project-card" data-aos="fade-left">
-      <h3>Face Recognition System</h3>
-      <p>OpenCV | Deep Learning</p>
-    </div>
-  </section>
 
-  <!-- CERTIFICATES -->
-  <section class="certificates" id="certificates">
+<!-- FOOTER -->
+<footer>
+  © 2026 Suranjan Chaudhari
+</footer>
 
-    <h2 data-aos="fade-up">Certificates</h2>
 
-    <a class="project-card" data-aos="zoom-in" target="_blank"
-      href="https://www.linkedin.com/posts/suranjan-chaudhari-08a745342_proud-to-have-participated-in-hackwise-2026-activity-7422976421234475008-ZVL1">
-      HackWise 2026 Participation
-    </a>
+<!-- JS -->
+<script src="script.js"></script>
 
-    <a class="project-card" data-aos="zoom-in" target="_blank"
-      href="https://www.linkedin.com/posts/suranjan-chaudhari-08a745342_python-ibm-paruluniversity-activity-7362319983973974018-quMB">
-      Python for Data Science – IBM
-    </a>
-
-    <a class="project-card" data-aos="zoom-in" target="_blank"
-      href="https://www.linkedin.com/posts/suranjan-chaudhari-08a745342_it-specialist-javascript-was-issued-by-activity-7323950555305836544-4sej">
-      IT Specialist – JavaScript
-    </a>
-
-    <a class="project-card" data-aos="zoom-in" target="_blank"
-      href="https://www.linkedin.com/posts/suranjan-chaudhari-08a745342_html-css-learning-activity-7296412771833786368-rNjZ">
-      HTML & CSS Learning
-    </a>
-
-    <a class="project-card" data-aos="zoom-in" target="_blank"
-      href="https://www.linkedin.com/posts/suranjan-chaudhari-08a745342_it-specialist-html-and-css-was-issued-by-activity-7295696445351829504-MLw4">
-      IT Specialist – HTML & CSS
-    </a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    © 2026 Suranjan Chaudhari
-  </footer>
-
-  <!-- JS -->
-  <script src="script.js"></script>
-
-  <!-- Animation -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1200, once: true });
-  </script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1200, once: true });
+</script>
 
 </body>
 </html>
-
-
