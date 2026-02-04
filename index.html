@@ -11,6 +11,9 @@
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -19,7 +22,6 @@
 
 <!-- NAVBAR -->
 <header>
-
   <nav class="navbar">
 
     <div class="logo">Suranjan</div>
@@ -33,27 +35,31 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#certificates">Certificates</a></li>
-      
-
     </ul>
 
   </nav>
-
 </header>
 
 
 <!-- HERO -->
-<section class="hero" id="home">
+<section class="hero" id="home" data-aos="fade-up">
 
   <h1>Suranjan Chaudhari</h1>
-
   <p>CSE (AI & ML) Student | Data & ML Enthusiast</p>
 
   <div class="socials">
 
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-    <a href="#"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/suranjan2006" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/suranjan-chaudhari-08a745342/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="mailto:suranjanchaudhari07@gmail.com">
+      <i class="fas fa-envelope"></i>
+    </a>
 
   </div>
 
@@ -67,13 +73,17 @@
 <!-- SKILLS -->
 <section class="skills" id="skills">
 
-  <h2>Technical Skills</h2>
+  <h2 data-aos="fade-down">Technical Skills</h2>
 
-  <div class="skill-card">C++ (DSA, STL, OOP)</div>
-  <div class="skill-card">Python</div>
-  <div class="skill-card">Machine Learning</div>
-  <div class="skill-card">Data Visualization</div>
-  <div class="skill-card">HTML, CSS, JS</div>
+  <div class="cards">
+
+    <div class="skill-card" data-aos="zoom-in">C++ (DSA, STL, OOP)</div>
+    <div class="skill-card" data-aos="zoom-in">Python</div>
+    <div class="skill-card" data-aos="zoom-in">Machine Learning</div>
+    <div class="skill-card" data-aos="zoom-in">Data Visualization</div>
+    <div class="skill-card" data-aos="zoom-in">HTML, CSS, JavaScript</div>
+
+  </div>
 
 </section>
 
@@ -81,12 +91,35 @@
 <!-- PROJECTS -->
 <section class="projects" id="projects">
 
-  <h2>Projects</h2>
+  <h2 data-aos="fade-down">Projects</h2>
 
-  <div class="project-card">Movie Recommender</div>
-  <div class="project-card">Laptop Predictor</div>
-  <div class="project-card">Spam Classifier</div>
-  <div class="project-card">Face Recognition</div>
+  <div class="cards">
+
+    <div class="project-card" data-aos="fade-right">
+      Movie Recommender System
+    </div>
+
+    <div class="project-card" data-aos="fade-left">
+      Laptop Price Predictor
+    </div>
+
+    <div class="project-card" data-aos="fade-right">
+      Spam Email Classifier
+    </div>
+
+    <div class="project-card" data-aos="fade-left">
+      Face Recognition System
+    </div>
+
+    <div class="project-card" data-aos="fade-right">
+      Student Management System
+    </div>
+
+    <div class="project-card" data-aos="fade-left">
+      Portfolio Website
+    </div>
+
+  </div>
 
 </section>
 
@@ -94,22 +127,57 @@
 <!-- CERTIFICATES -->
 <section class="certificates" id="certificates">
 
-  <h2>Certificates</h2>
+  <h2 data-aos="fade-down">Certificates</h2>
 
-  <a class="project-card" href="#">HackWise</a>
-  <a class="project-card" href="#">Python IBM</a>
-  <a class="project-card" href="#">JavaScript</a>
+  <div class="cards">
+
+    <a class="project-card" target="_blank"
+      href="https://www.linkedin.com/posts/suranjan-chaudhari-08a745342_proud-to-have-participated-in-hackwise-2026-activity-7422976421234475008-ZVL1">
+      HackWise 2026
+    </a>
+
+    <a class="project-card" target="_blank"
+      href="https://www.linkedin.com/posts/suranjan-chaudhari-08a745342_python-ibm-paruluniversity-activity-7362319983973974018-quMB">
+      Python IBM
+    </a>
+
+    <a class="project-card" target="_blank"
+      href="https://www.linkedin.com/posts/suranjan-chaudhari-08a745342_it-specialist-javascript-was-issued-by-activity-7323950555305836544-4sej">
+      JavaScript Specialist
+    </a>
+
+    <a class="project-card" target="_blank"
+      href="https://www.linkedin.com/posts/suranjan-chaudhari-08a745342_html-css-learning-activity-7296412771833786368-rNjZ">
+      HTML & CSS Learning
+    </a>
+
+    <a class="project-card" target="_blank"
+      href="https://www.linkedin.com/posts/suranjan-chaudhari-08a745342_it-specialist-html-and-css-was-issued-by-activity-7295696445351829504-MLw4">
+      HTML & CSS Specialist
+    </a>
+
+  </div>
 
 </section>
+
 
 <footer>
   © 2026 Suranjan Chaudhari
 </footer>
 
 
+<!-- Scripts -->
 <script src="script.js"></script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 
 </body>
 </html>
-
-
