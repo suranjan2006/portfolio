@@ -5,14 +5,11 @@
   <title>Suranjan | AI/ML Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font -->
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
@@ -21,37 +18,41 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar">
+<header>
 
-  <div class="logo">Suranjan</div>
+  <nav class="navbar">
 
-  <div class="menu-toggle" id="menu-toggle">
-    <i class="fas fa-bars"></i>
-  </div>
+    <div class="logo">Suranjan</div>
 
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#certificates">Certificates</a></li>
-  </ul>
+    <div class="menu-btn" id="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
 
-</nav>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+    </ul>
+
+  </nav>
+
+</header>
 
 
 <!-- HERO -->
 <section class="hero" id="home">
 
-  <h1 data-aos="fade-up">Suranjan Chaudhari</h1>
+  <h1>Suranjan Chaudhari</h1>
 
-  <p data-aos="fade-up" data-aos-delay="200">
-    CSE (AI & ML) Student | Data & ML Enthusiast
-  </p>
+  <p>CSE (AI & ML) Student | Data & ML Enthusiast</p>
 
-  <div class="socials" data-aos="zoom-in" data-aos-delay="400">
-    <a href="https://github.com/suranjan2006" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/suranjan-chaudhari-08a745342/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="mailto:suranjanchaudhari07@gmail.com"><i class="fas fa-envelope"></i></a>
+  <div class="socials">
+
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fas fa-envelope"></i></a>
+
   </div>
 
   <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
@@ -64,13 +65,13 @@
 <!-- SKILLS -->
 <section class="skills" id="skills">
 
-  <h2 data-aos="fade-up">Technical Skills</h2>
+  <h2>Technical Skills</h2>
 
   <div class="skill-card">C++ (DSA, STL, OOP)</div>
-  <div class="skill-card">Python (Pandas, NumPy, Scikit-learn)</div>
+  <div class="skill-card">Python</div>
   <div class="skill-card">Machine Learning</div>
   <div class="skill-card">Data Visualization</div>
-  <div class="skill-card">HTML, CSS, JavaScript</div>
+  <div class="skill-card">HTML, CSS, JS</div>
 
 </section>
 
@@ -78,27 +79,12 @@
 <!-- PROJECTS -->
 <section class="projects" id="projects">
 
-  <h2 data-aos="fade-up">Featured Projects</h2>
+  <h2>Projects</h2>
 
-  <div class="project-card">
-    <h3>Movie Recommender</h3>
-    <p>TF-IDF | NLP</p>
-  </div>
-
-  <div class="project-card">
-    <h3>Laptop Price Predictor</h3>
-    <p>Random Forest</p>
-  </div>
-
-  <div class="project-card">
-    <h3>Spam Classifier</h3>
-    <p>Naive Bayes</p>
-  </div>
-
-  <div class="project-card">
-    <h3>Face Recognition</h3>
-    <p>OpenCV</p>
-  </div>
+  <div class="project-card">Movie Recommender</div>
+  <div class="project-card">Laptop Predictor</div>
+  <div class="project-card">Spam Classifier</div>
+  <div class="project-card">Face Recognition</div>
 
 </section>
 
@@ -106,30 +92,21 @@
 <!-- CERTIFICATES -->
 <section class="certificates" id="certificates">
 
-  <h2 data-aos="fade-up">Certificates</h2>
+  <h2>Certificates</h2>
 
-  <a class="project-card" href="#" target="_blank">HackWise 2026</a>
-  <a class="project-card" href="#" target="_blank">Python – IBM</a>
-  <a class="project-card" href="#" target="_blank">JavaScript</a>
-  <a class="project-card" href="#" target="_blank">HTML & CSS</a>
+  <a class="project-card" href="#">HackWise</a>
+  <a class="project-card" href="#">Python IBM</a>
+  <a class="project-card" href="#">JavaScript</a>
 
 </section>
 
 
-<!-- FOOTER -->
 <footer>
   © 2026 Suranjan Chaudhari
 </footer>
 
 
-<!-- JS -->
 <script src="script.js"></script>
-
-<!-- AOS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({ duration: 1200, once: true });
-</script>
 
 </body>
 </html>
