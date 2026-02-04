@@ -1,10 +1,6 @@
-console.log("Portfolio Loaded 🚀");
+const menuBtn = document.getElementById("menu-btn");
+const navMenu = document.getElementById("nav-menu");
 
-// Mobile Navbar Toggle
-
-const toggle = document.getElementById("menu-toggle");
-const nav = document.getElementById("nav-links");
-
-toggle.addEventListener("click", () => {
-  nav.classList.toggle("active");
+menuBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
 });
