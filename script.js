@@ -1,5 +1,6 @@
-console.log("Portfolio Loaded Successfully 🚀");
-// Navbar Toggle (Mobile)
+console.log("Portfolio Loaded 🚀");
+
+// Mobile Navbar Toggle
 
 const toggle = document.getElementById("menu-toggle");
 const nav = document.getElementById("nav-links");
