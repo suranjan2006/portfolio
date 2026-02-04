@@ -195,6 +195,35 @@ footer {
 
   .hero h1 {
     font-size: 2.2rem;
+
+    /* CONTACT */
+
+.contact {
+  padding: 80px 12%;
+  text-align: center;
+}
+
+.contact-box {
+  max-width: 500px;
+  margin: auto;
+
+  background: rgba(255,255,255,0.08);
+  padding: 30px;
+
+  border-radius: 20px;
+}
+
+.contact-box p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.contact-box i {
+  color: #6fffe9;
+  margin-right: 10px;
+}
+
   }
 }
+
 
